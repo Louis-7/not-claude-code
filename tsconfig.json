@@ -1,0 +1,36 @@
+{
+  "compilerOptions": {
+    "target": "ES2022",
+    "module": "ESNext",
+    "moduleResolution": "bundler",
+    "jsx": "react-jsx",
+    "strict": true,
+    "noEmit": true,
+    "skipLibCheck": true,
+    "esModuleInterop": true,
+    "allowSyntheticDefaultImports": true,
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "verbatimModuleSyntax": false,
+    "paths": {
+      "src/*": [
+        "./src/*"
+      ],
+      "#bun-bundle": [
+        "./src/shims/bunBundle.ts"
+      ]
+    },
+    "lib": [
+      "ES2022"
+    ],
+    "types": [
+      "bun-types",
+      "node"
+    ]
+  },
+  "include": [
+    "src/**/*",
+    "stubs/**/*",
+    "types/**/*"
+  ]
+}
